@@ -3,6 +3,7 @@
 
 namespace App\Controller;
 
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -19,23 +20,23 @@ use App\Entity\BlogPost;
  */
 class BlogController extends AbstractController
 {
-    private const POSTS = [
-        [
-            'id' => 1,
-            'slug' => 'hello-world',
-            'title' => 'Hello-world'
-        ],
-        [
-            'id' => 2,
-            'slug' => 'hello-world-2',
-            'title' => 'Hello-world-2'
-        ],
-        [
-            'id' => 3,
-            'slug' => 'hello-world-3',
-            'title' => 'Hello-world-3'
-        ]
-    ];
+//    private const POSTS = [
+//        [
+//            'id' => 1,
+//            'slug' => 'hello-world',
+//            'title' => 'Hello-world'
+//        ],
+//        [
+//            'id' => 2,
+//            'slug' => 'hello-world-2',
+//            'title' => 'Hello-world-2'
+//        ],
+//        [
+//            'id' => 3,
+//            'slug' => 'hello-world-3',
+//            'title' => 'Hello-world-3'
+//        ]
+//    ];
 
 
     /**
@@ -47,41 +48,53 @@ class BlogController extends AbstractController
     public function list($page, Request $request)
     {
         $limit = $request->get('limit', 10);
+        $repository = $this->getDoctrine()->getRepository(BlogPost::class);
+        $items = $repository->findAll();
+
         return new JsonResponse(
             [
                'page' => $page,
                'limit' => $limit,
                'data' => array_map(function($item) {
-                   return $this->generateUrl("blog_by_slug", ['id' => $item['slug']]);
-               }, self::POSTS)
+                   return $this->generateUrl("blog_by_slug", ['id' => $item->getSlug()]);
+               }, $items)
             ]
         );
     }
 
     /**
-     * @Route("/{id}", name="blog_by_id", requirements={"id"="\d+"})
+     * @Route("/post/{id}", name="blog_by_id", requirements={"id"="\d+"})
+     * @ParamConverter("post", class="App:BlogPost")
      *
-     * @param $id
+     * @param BlogPost $post
      * @return JsonResponse
      */
-    public function post($id)
+    public function post($post) // can also declare BlogPost without annotation
     {
-        return new JsonResponse(
-            self::POSTS[array_search($id, array_column(self::POSTS, "id"))]
-        );
+        return $this->json($post);
+//      it's the same as doing on find($id) on repository
+//        return new JsonResponse(
+//            $this->getDoctrine()->getRepository(BlogPost::class)->find($id)
+//        );
     }
 
     /**
-     * @Route("/", name="blog_by_slug")
+     * @Route("/post/{slug}", name="blog_by_slug")
+     * The below annotation is not required when $post type hinted with BlogPost
+     * and route parameter name matches any fields on the blogPost entity
      *
-     * @param $slug
+     * @ParamConverter("post", class="App:BlogPost", options={"mapping": {"slug": "slug"}})
+     *
+     * @param $post
      * @return JsonResponse
      */
-    public function postBySlug($slug)
+    public function postBySlug($post)
     {
-        return new JsonResponse(
-            self::POSTS[array_search($slug, array_column(self::POSTS, "slug"))]
-        );
+        return $this->json($post);
+//      it's the same as doing on findBySlug
+//        return new JsonResponse(
+//            $this->getDoctrine()->getRepository(BlogPost::class)->findBySlug(['slug' => $slug])
+//        );
     }
 
     /**

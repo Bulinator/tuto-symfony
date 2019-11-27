@@ -7,6 +7,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Serializer\Serializer;
 use App\Entity\BlogPost;
@@ -63,7 +64,7 @@ class BlogController extends AbstractController
     }
 
     /**
-     * @Route("/post/{id}", name="blog_by_id", requirements={"id"="\d+"})
+     * @Route("/post/{id}", name="blog_by_id", requirements={"id"="\d+"}, methods={"GET"})
      * @ParamConverter("post", class="App:BlogPost")
      *
      * @param BlogPost $post
@@ -79,7 +80,7 @@ class BlogController extends AbstractController
     }
 
     /**
-     * @Route("/post/{slug}", name="blog_by_slug")
+     * @Route("/post/{slug}", name="blog_by_slug", methods={"GET"})
      * The below annotation is not required when $post type hinted with BlogPost
      * and route parameter name matches any fields on the blogPost entity
      *
@@ -115,5 +116,20 @@ class BlogController extends AbstractController
         $em->flush();
 
         return $this->json($blogPost);
+    }
+
+    /**
+     * @Route("/delete/{id}", name="blog_delete", methods={"DELETE"})
+     *
+     * @param BlogPost $post
+     * @return JsonResponse
+     */
+    public function delete(BlogPost $post)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $em->remove($post);
+        $em->flush(); // commit
+
+        return new JsonResponse(null, Response::HTTP_OK);
     }
 }

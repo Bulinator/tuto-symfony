@@ -9,7 +9,10 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
- * @ApiResource()
+ * @ApiResource(
+ *     itemOperations={"get"},
+ *     collectionOperations={"get"}
+ * )
  * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
  * @method bool needsRehash(UserInterface $user)
  */

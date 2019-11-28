@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a778473-a4aa-47b3-aec7-e5cb6cb93351" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/EventSubscriber/PasswordHashSubscriber.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
     </list>
@@ -132,6 +133,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -157,7 +159,7 @@
       <updated>1574782933409</updated>
       <workItem from="1574782934498" duration="5461000" />
       <workItem from="1574845224194" duration="11184000" />
-      <workItem from="1574929439175" duration="8641000" />
+      <workItem from="1574929439175" duration="11988000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Added webprofiler for debugging&#10;fix: Added blogpost entity to controller blogpost">
       <created>1574846257917</created>
@@ -236,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574939343807</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="feat: Disabling operations ApiResource">
+      <created>1574940255145</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1574940255146</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,6 +277,7 @@
     <MESSAGE value="feat: Fixtures password encoding" />
     <MESSAGE value="feat: Generate data in fixtures using faker" />
     <MESSAGE value="feat: BlogPost with Comment relation and fixtures" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: BlogPost with Comment relation and fixtures" />
+    <MESSAGE value="feat: Disabling operations ApiResource" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Disabling operations ApiResource" />
   </component>
 </project>

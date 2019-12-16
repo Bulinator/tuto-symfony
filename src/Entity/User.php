@@ -6,6 +6,7 @@ use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Serializer\Annotation\Groups;
 use Symfony\Component\Validator\Constraints as Assert;
@@ -19,6 +20,8 @@ use Symfony\Component\Validator\Constraints as Assert;
  *     }
  * )
  * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
+ * @UniqueEntity("username")
+ * @UniqueEntity("email")
  * @method bool needsRehash(UserInterface $user)
  */
 class User implements UserInterface
@@ -48,6 +51,15 @@ class User implements UserInterface
      * )
      */
     private $password;
+
+    /**
+     * @Assert\NotBlank()
+     * @Assert\Expression(
+     *     "this.getPassword() === this.getRetypedPassword()",
+     *     message="Password does not match"
+     * )
+     */
+    private $retypedPassword;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -187,4 +199,16 @@ class User implements UserInterface
     public function eraseCredentials()
     {
     }
+
+    public function getRetypedPassword()
+    {
+        return $this->retypedPassword;
+    }
+
+    public function setRetypedPassword($retypedPassword): void
+    {
+        $this->retypedPassword = $retypedPassword;
+    }
+
+
 }

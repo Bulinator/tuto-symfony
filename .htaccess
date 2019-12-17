@@ -1,2 +1,3 @@
 # Rewrite all other queries to the front controller.
 RewriteRule ^ %{ENV:BASE}/index.php [L]
+SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1

@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9a778473-a4aa-47b3-aec7-e5cb6cb93351" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/BlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/BlogPost.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -165,7 +164,7 @@
       <workItem from="1574929439175" duration="14525000" />
       <workItem from="1575016313675" duration="781000" />
       <workItem from="1576483290925" duration="4187000" />
-      <workItem from="1576594705602" duration="3609000" />
+      <workItem from="1576594705602" duration="4494000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Added webprofiler for debugging&#10;fix: Added blogpost entity to controller blogpost">
       <created>1574846257917</created>
@@ -293,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576597776737</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="feat: Using is_granted() to control access to operations">
+      <created>1576598432714</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1576598432714</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -332,6 +338,7 @@
     <MESSAGE value="feat: Preparing jwt token library and keys" />
     <MESSAGE value="feat: Firewall config" />
     <MESSAGE value="feat: Authentication final configuration and first login using JWT token" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Authentication final configuration and first login using JWT token" />
+    <MESSAGE value="feat: Using is_granted() to control access to operations" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Using is_granted() to control access to operations" />
   </component>
 </project>

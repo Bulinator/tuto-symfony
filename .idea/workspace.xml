@@ -4,6 +4,7 @@
     <list default="true" id="9a778473-a4aa-47b3-aec7-e5cb6cb93351" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/BlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/BlogPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +172,7 @@
       <workItem from="1576594705602" duration="5345000" />
       <workItem from="1576768239874" duration="43000" />
       <workItem from="1576768349076" duration="1048000" />
-      <workItem from="1576860206196" duration="2019000" />
+      <workItem from="1576860206196" duration="2779000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Added webprofiler for debugging&#10;fix: Added blogpost entity to controller blogpost">
       <created>1574846257917</created>
@@ -320,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576862763993</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="feat:  Making sure only owner of BlogPost can modify it (PUT)">
+      <created>1576863193229</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1576863193229</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,17 +370,18 @@
     <MESSAGE value="feat: Using is_granted() to control access to operations" />
     <MESSAGE value="feat: BlogPost validation on POST" />
     <MESSAGE value="feat: Setting author of BlogPost automatically (EventSubscriber)" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Setting author of BlogPost automatically (EventSubscriber)" />
+    <MESSAGE value="feat:  Making sure only owner of BlogPost can modify it (PUT)" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:  Making sure only owner of BlogPost can modify it (PUT)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="184" key="#Notifications" timestamp="1576768360230">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="184" key="#Notifications/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1576768360230" />
-    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1576862763258">
+    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1576863192441">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1576862763258" />
+    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1576863192441" />
     <state x="707" y="340" key="NewPhpClassDialog" timestamp="1576862145393">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

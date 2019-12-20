@@ -1,9 +1,9 @@
 <?php
 
-
 namespace App\EventSubscriber;
 
 use ApiPlatform\Core\EventListener\EventPriorities;
+use App\Entity\AuthoredEntityInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Event\ViewEvent;
@@ -11,7 +11,7 @@ use Symfony\Component\HttpKernel\KernelEvents;
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
-class AuthoredEntitySubscriber implements  EventSubscriberInterface
+class AuthoredEntitySubscriber implements EventSubscriberInterface
 {
     /**
      * @var TokenStorageInterface
@@ -23,7 +23,6 @@ class AuthoredEntitySubscriber implements  EventSubscriberInterface
         $this->tokenStorage = $tokenStorage;
     }
 
-
     public static function getSubscribedEvents()
     {
         return [
@@ -32,7 +31,7 @@ class AuthoredEntitySubscriber implements  EventSubscriberInterface
     }
 
     /**
-     * Set author if logged in and send a new blog post
+     * Set author when get a new blog post request
      *
      * @param ViewEvent $event
      */
@@ -40,11 +39,15 @@ class AuthoredEntitySubscriber implements  EventSubscriberInterface
     {
         $entity = $event->getControllerResult();
         $method = $event->getRequest()->getMethod();
+        $token = $this->tokenStorage->getToken();
+
+        if (null === $token) {
+            return;
+        }
 
         /** @var UserInterface $author */
-        $author = $this->tokenStorage->getToken()->getUser();
-
-        if ($entity instanceof BlogPost || Request::METHOD_POST !== $method) {
+        $author = $token->getUser();
+        if (!$entity instanceof AuthoredEntityInterface || Request::METHOD_POST !== $method) {
             return;
         }
 

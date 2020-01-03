@@ -34,7 +34,10 @@ use Symfony\Component\Validator\Constraints as Assert;
  *         "post"={
  *             "denormalization_context"={
  *                 "groups"={"post"}
- *             }
+ *             },
+ *            "normalization_context"={
+ *                 "groups"={"get"}
+ *            }
  *         }
  *     }
  * )
@@ -121,6 +124,7 @@ class User implements UserInterface
 
     /**
      * @ORM\Column(type="simple_array", length=200);
+     * @Groups({"get-admin"})
      */
     private $roles;
 

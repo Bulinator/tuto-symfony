@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a778473-a4aa-47b3-aec7-e5cb6cb93351" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200103142847.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/BlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/BlogPost.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20191128105812.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20191128105812.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +169,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/EventSubscriber" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../eva" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -214,7 +215,7 @@
       <workItem from="1576768239874" duration="43000" />
       <workItem from="1576768349076" duration="1048000" />
       <workItem from="1576860206196" duration="4564000" />
-      <workItem from="1578037471067" duration="9279000" />
+      <workItem from="1578037471067" duration="12968000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Added webprofiler for debugging&#10;fix: Added blogpost entity to controller blogpost">
       <created>1574846257917</created>
@@ -426,7 +427,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578049615459</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="feat: API subresources Embedding Author resource inside BlogPost">
+      <created>1578050432843</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1578050432843</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -447,7 +455,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: Model manyToOne relation and migration" />
     <MESSAGE value="feat: Fixtures with references (for relations)" />
     <MESSAGE value="feat: Fixtures password encoding" />
     <MESSAGE value="feat: Generate data in fixtures using faker" />
@@ -472,7 +479,8 @@
     <MESSAGE value="feat: API subresources" />
     <MESSAGE value="feat: API subresources (see https://api-platform.com/docs/core/subresources/)" />
     <MESSAGE value="feat: API subresources Controlling how deep relations are serialized" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: API subresources Controlling how deep relations are serialized" />
+    <MESSAGE value="feat: API subresources Embedding Author resource inside BlogPost" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: API subresources Embedding Author resource inside BlogPost" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="184" key="#Notifications" timestamp="1576768360230">
@@ -491,10 +499,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="701" y="142" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578042096806" />
-    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578049614693">
+    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578050432219">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578049614693" />
+    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578050432219" />
+    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1578056849041">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578056849041" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1578038972366">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -503,10 +515,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="707" y="340" key="NewPhpClassDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578043205387" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1578047670123">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1578050434716">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578047670123" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578050434716" />
     <state x="655" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1578037737699">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

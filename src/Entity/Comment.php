@@ -28,7 +28,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  * )
  * @ORM\Entity(repositoryClass="App\Repository\CommentRepository")
  */
-class Comment implements UserInterface, PublishedDateEntityInterface
+class Comment implements AuthoredEntityInterface, PublishedDateEntityInterface
 {
     /**
      * @ORM\Id()
@@ -59,6 +59,7 @@ class Comment implements UserInterface, PublishedDateEntityInterface
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\BlogPost", inversedBy="comments")
      * @ORM\JoinColumn(nullable=false, name="blog_post_id")
+     * @Groups({"post"})
      */
     private $blogPost;
 

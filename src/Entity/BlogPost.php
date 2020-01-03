@@ -22,8 +22,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  *         "get",
  *         "post"={
  *             "access_control"="is_granted('IS_AUTHENTICATED_FULLY')"
- *         },
- *         "post"
+ *         }
  *     }
  * )
  */

@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a778473-a4aa-47b3-aec7-e5cb6cb93351" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Entity/PublishedDateEntityInterface.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/AutoredEntityInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/AuthoredEntityInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/BlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/BlogPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventSubscriber/AuthoredEntitySubscriber.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventSubscriber/AuthoredEntitySubscriber.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +212,7 @@
       <workItem from="1576768239874" duration="43000" />
       <workItem from="1576768349076" duration="1048000" />
       <workItem from="1576860206196" duration="4564000" />
-      <workItem from="1578037471067" duration="3713000" />
+      <workItem from="1578037471067" duration="4838000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Added webprofiler for debugging&#10;fix: Added blogpost entity to controller blogpost">
       <created>1574846257917</created>
@@ -385,7 +389,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578039772036</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="feat: More randomness in fixtures (users)">
+      <created>1578042702376</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1578042702376</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,7 +417,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: Added webprofiler for debugging&#10;fix: Added blogpost entity to controller blogpost" />
     <MESSAGE value="feat: ParamConverter - type hinting action for automatic fetching of entities" />
     <MESSAGE value="feat: deleting entities" />
     <MESSAGE value="feat: adding bundle data fixtures" />
@@ -431,7 +441,8 @@
     <MESSAGE value="feat: Controlling which properties can be changed (no username change)" />
     <MESSAGE value="feat: Hasing password on User changes (PUT) - with Events" />
     <MESSAGE value="feat: Comment resource operations (POST/PUT)" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Comment resource operations (POST/PUT)" />
+    <MESSAGE value="feat: More randomness in fixtures (users)" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: More randomness in fixtures (users)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="184" key="#Notifications" timestamp="1576768360230">
@@ -442,26 +453,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="184" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578038948534" />
+    <state x="690" y="281" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1578043085248">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="690" y="281" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578043085248" />
     <state x="701" y="142" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1578042096806">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="701" y="142" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578042096806" />
-    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578042665246">
+    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578043767259">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578042665246" />
+    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578043767259" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1578038972366">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578038972366" />
-    <state x="707" y="340" key="NewPhpClassDialog" timestamp="1576865507517">
+    <state x="707" y="340" key="NewPhpClassDialog" timestamp="1578043205387">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="707" y="340" key="NewPhpClassDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1576865507517" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1576866040358">
+    <state x="707" y="340" key="NewPhpClassDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578043205387" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1578042706425">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1576866040358" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578042706425" />
     <state x="655" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1578037737699">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

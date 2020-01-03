@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a778473-a4aa-47b3-aec7-e5cb6cb93351" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/BlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/BlogPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventSubscriber/AuthoredEntitySubscriber.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventSubscriber/AuthoredEntitySubscriber.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +208,7 @@
       <workItem from="1576768239874" duration="43000" />
       <workItem from="1576768349076" duration="1048000" />
       <workItem from="1576860206196" duration="4564000" />
-      <workItem from="1578037471067" duration="1760000" />
+      <workItem from="1578037471067" duration="3713000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Added webprofiler for debugging&#10;fix: Added blogpost entity to controller blogpost">
       <created>1574846257917</created>
@@ -382,7 +378,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576866039119</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="feat: Comment resource operations (POST/PUT)">
+      <created>1578039772036</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1578039772036</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -427,7 +430,8 @@
     <MESSAGE value="feat:  Making sure only owner of BlogPost can modify it (PUT)" />
     <MESSAGE value="feat: Controlling which properties can be changed (no username change)" />
     <MESSAGE value="feat: Hasing password on User changes (PUT) - with Events" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Hasing password on User changes (PUT) - with Events" />
+    <MESSAGE value="feat: Comment resource operations (POST/PUT)" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Comment resource operations (POST/PUT)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="184" key="#Notifications" timestamp="1576768360230">
@@ -438,10 +442,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="184" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578038948534" />
-    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1576866038548">
+    <state x="701" y="142" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1578042096806">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1576866038548" />
+    <state x="701" y="142" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578042096806" />
+    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578042665246">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578042665246" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1578038972366">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

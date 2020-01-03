@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a778473-a4aa-47b3-aec7-e5cb6cb93351" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Entity/PublishedDateEntityInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventSubscriber/PublishedDateEntitySubscriber.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/AutoredEntityInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/AuthoredEntityInterface.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/BlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/BlogPost.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventSubscriber/AuthoredEntitySubscriber.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventSubscriber/AuthoredEntitySubscriber.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,10 +169,15 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Timeplanner_v4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/EventSubscriber" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\laragon\www\symfony-tuto\project\src\EventSubscriber" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -212,7 +215,7 @@
       <workItem from="1576768239874" duration="43000" />
       <workItem from="1576768349076" duration="1048000" />
       <workItem from="1576860206196" duration="4564000" />
-      <workItem from="1578037471067" duration="4838000" />
+      <workItem from="1578037471067" duration="6561000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Added webprofiler for debugging&#10;fix: Added blogpost entity to controller blogpost">
       <created>1574846257917</created>
@@ -396,7 +399,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578042702376</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="feat: Setting author automatically (EventSubscriber) - using generic Interface">
+      <created>1578043812636</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1578043812636</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -417,7 +427,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: ParamConverter - type hinting action for automatic fetching of entities" />
     <MESSAGE value="feat: deleting entities" />
     <MESSAGE value="feat: adding bundle data fixtures" />
     <MESSAGE value="feat: quick view on EasyAdmin panel" />
@@ -442,7 +451,8 @@
     <MESSAGE value="feat: Hasing password on User changes (PUT) - with Events" />
     <MESSAGE value="feat: Comment resource operations (POST/PUT)" />
     <MESSAGE value="feat: More randomness in fixtures (users)" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: More randomness in fixtures (users)" />
+    <MESSAGE value="feat: Setting author automatically (EventSubscriber) - using generic Interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Setting author automatically (EventSubscriber) - using generic Interface" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="184" key="#Notifications" timestamp="1576768360230">
@@ -461,10 +471,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="701" y="142" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578042096806" />
-    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578043767259">
+    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578043811978">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578043767259" />
+    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578043811978" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1578038972366">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

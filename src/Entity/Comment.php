@@ -13,13 +13,20 @@ use Symfony\Component\Validator\Constraints as Assert;
  *     itemOperations={
  *         "get",
  *         "put"={
- *             "access_control"="is_granted('IS_AUTHENTICATED_FULLY') and object.getAuthor() == user"
- *         },
+ *             "access_control"="(is_granted('IS_AUTHENTICATED_FULLY') and object.getAuthor() == user)"
+ *         }
  *     },
  *     collectionOperations={
  *         "get",
  *         "post"={
  *             "access_control"="is_granted('IS_AUTHENTICATED_FULLY')"
+ *         },
+ *     },
+ *     subresourceOperations={
+ *         "api_blog_posts_comments_get_subresource"={
+ *             "normalization_context"={
+ *                 "groups"={"get-comment-with-author"}
+ *             }
  *         }
  *     },
  *     denormalizationContext={
@@ -34,12 +41,13 @@ class Comment implements AuthoredEntityInterface, PublishedDateEntityInterface
      * @ORM\Id()
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
+     * @Groups({"get-comment-with-author"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="text")
-     * @Groups({"post"})
+     * @Groups({"post", "get-comment-with-author"})
      * @Assert\NotBlank()
      * @Assert\length(min=5, max=3000)
      */
@@ -47,12 +55,14 @@ class Comment implements AuthoredEntityInterface, PublishedDateEntityInterface
 
     /**
      * @ORM\Column(type="datetime")
+     * @Groups({"get-comment-with-author"})
      */
     private $published;
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="comments")
      * @ORM\JoinColumn(nullable=false)
+     * @Groups({"get-comment-with-author"})
      */
     private $author;
 

@@ -15,7 +15,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  * @ApiResource(
  *     itemOperations={
  *         "get"={
- *             "access_control"="is_granted('IS_AUTHENTICATED_ANONYMOUSLY')",
+ *             "access_control"="is_granted('IS_AUTHENTICATED_FULLY')",
  *             "normalization_context"={
  *                 "groups"={"get"}
  *             }
@@ -103,7 +103,7 @@ class User implements UserInterface
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Groups({"post", "put", "get-admin"})
+     * @Groups({"post", "put", "get-admin", "get-owner"})
      * @Assert\NotBlank()
      * @Assert\Email()
      * @Assert\Length(min=6, max=255)
@@ -124,7 +124,7 @@ class User implements UserInterface
 
     /**
      * @ORM\Column(type="simple_array", length=200);
-     * @Groups({"get-admin"})
+     * @Groups({"get-admin", "get-owner"})
      */
     private $roles;
 

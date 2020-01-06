@@ -32,7 +32,7 @@ class UserConfirmationService
     public function confirmUser(string $confirmationToken)
     {
         $user = $this->userRepository->findOneBy([
-            'confirmationToken' => $confirmationToken->confirmationToken
+            'confirmationToken' => $confirmationToken
         ]);
 
         // User was found by confirmation token

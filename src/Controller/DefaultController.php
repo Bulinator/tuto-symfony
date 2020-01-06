@@ -21,10 +21,13 @@ class DefaultController extends AbstractController
      */
     public function index()
     {
-        return new JsonResponse([
-           'action' => 'index',
-           'time' => time()
-        ]);
+//        return new JsonResponse([
+//           'action' => 'index',
+//           'time' => time()
+//        ]);
+        return $this->render(
+            'base.html.twig'
+        );
     }
 
     /**

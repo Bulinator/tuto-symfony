@@ -3,11 +3,13 @@
 namespace App\Email;
 
 use App\Entity\User;
+use Swift_Message;
+use Twig\Environment;
 
 class Mailer
 {
     /**
-     * @var \Swift_Mailer
+     * @var Mailer
      */
     private $mailer;
 
@@ -19,9 +21,9 @@ class Mailer
     /**
      * Mailer constructor.
      * @param \Swift_Mailer $mailer
-     * @param \Twig_Environment $twig
+     * @param Environment $twig
      */
-    public function __construct(\Swift_Mailer $mailer, \Twig_Environment $twig)
+    public function __construct(\Swift_Mailer $mailer, Environment $twig)
     {
 
         $this->mailer = $mailer;
@@ -38,10 +40,10 @@ class Mailer
         );
 
         // Send email here
-        $message = (new \Swift_Message("Hello from api platform (dev)"))
+        $message = (new Swift_Message("Please confirm your account"))
             ->setFrom('api-platform@api.com')
             ->setTo($user->getEmail())
-            ->setBody($body);
+            ->setBody($body, 'text/html');
 
         $this->mailer->send($message);
     }

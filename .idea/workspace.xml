@@ -4,8 +4,8 @@
     <list default="true" id="9a778473-a4aa-47b3-aec7-e5cb6cb93351" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventSubscriber/UserRegisterSubscriber.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventSubscriber/UserRegisterSubscriber.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Email/confirmation.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Email/confirmation.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Email/Mailer.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Email/Mailer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Security/UserConfirmationService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/UserConfirmationService.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,14 +217,7 @@
       <workItem from="1576860206196" duration="4564000" />
       <workItem from="1578037471067" duration="19877000" />
       <workItem from="1578068884082" duration="1654000" />
-      <workItem from="1578296962180" duration="19648000" />
-    </task>
-    <task id="LOCAL-00003" summary="feat: deleting entities">
-      <created>1574849014688</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1574849014688</updated>
+      <workItem from="1578296962180" duration="20463000" />
     </task>
     <task id="LOCAL-00004" summary="feat: adding bundle data fixtures">
       <created>1574849464081</created>
@@ -562,7 +555,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578326882248</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="feat: Traditional (non API) account confirmation route (for e-mail)">
+      <created>1578327571496</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1578327571496</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -583,7 +583,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: Setting published date automatically (EventSubscriber)" />
     <MESSAGE value="feat: API subresources" />
     <MESSAGE value="feat: API subresources (see https://api-platform.com/docs/core/subresources/)" />
     <MESSAGE value="feat: API subresources Controlling how deep relations are serialized" />
@@ -608,7 +607,8 @@
     <MESSAGE value="feat: Verifying Confirmation Token endpoint" />
     <MESSAGE value="feat: Install and configure Swift Mailer" />
     <MESSAGE value="feat: Refactoring UserConfirmation and Mailer into services" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Refactoring UserConfirmation and Mailer into services" />
+    <MESSAGE value="feat: Traditional (non API) account confirmation route (for e-mail)" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Traditional (non API) account confirmation route (for e-mail)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="184" key="#Intentions" timestamp="1578302279612">
@@ -639,10 +639,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="701" y="142" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578042096806" />
-    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578326881701">
+    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578327570953">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578326881701" />
+    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578327570953" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1578304988996">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -659,10 +659,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="707" y="340" key="NewPhpClassDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578326509150" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1578322842284">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1578327573215">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578322842284" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578327573215" />
     <state x="655" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1578296962896">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

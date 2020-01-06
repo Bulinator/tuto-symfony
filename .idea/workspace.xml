@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a778473-a4aa-47b3-aec7-e5cb6cb93351" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Serializer/UserAttributeNormalizer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -189,6 +187,11 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@3f6d10b1" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
             </expand>
             <select />
           </treeState>
@@ -215,7 +218,9 @@
       <workItem from="1576768239874" duration="43000" />
       <workItem from="1576768349076" duration="1048000" />
       <workItem from="1576860206196" duration="4564000" />
-      <workItem from="1578037471067" duration="19790000" />
+      <workItem from="1578037471067" duration="19877000" />
+      <workItem from="1578068884082" duration="1654000" />
+      <workItem from="1578296962180" duration="877000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Added webprofiler for debugging&#10;fix: Added blogpost entity to controller blogpost">
       <created>1574846257917</created>
@@ -476,7 +481,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578067457954</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="feat: User can view his full profile (including email and roles) - custom Normalizer">
+      <created>1578068824817</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1578068824817</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -497,7 +509,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: Validator and validation constraints" />
     <MESSAGE value="feat: Validation using regular expressions" />
     <MESSAGE value="feat: Preparing jwt token library and keys" />
     <MESSAGE value="feat: Firewall config" />
@@ -522,7 +533,8 @@
     <MESSAGE value="feat: Verifying only users with specific role can POST resources" />
     <MESSAGE value="feat: Different User view for admins (different serialization of all User entities)" />
     <MESSAGE value="feat: Verifying only admin can see all User's email" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Verifying only admin can see all User's email" />
+    <MESSAGE value="feat: User can view his full profile (including email and roles) - custom Normalizer" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: User can view his full profile (including email and roles) - custom Normalizer" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="184" key="#Notifications" timestamp="1576768360230">
@@ -533,10 +545,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="184" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578038948534" />
-    <state x="765" y="211" key="#com.intellij.ide.util.MemberChooser" timestamp="1578068019370">
+    <state x="765" y="211" key="#com.intellij.ide.util.MemberChooser" timestamp="1578297791747">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="765" y="211" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578068019370" />
+    <state x="765" y="211" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578297791747" />
     <state x="690" y="281" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1578043085248">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -545,10 +557,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="701" y="142" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578042096806" />
-    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578067457378">
+    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578068824224">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578067457378" />
+    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578068824224" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1578056849041">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -561,13 +573,17 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="707" y="340" key="NewPhpClassDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578067616995" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1578067459331">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1578068826304">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578067459331" />
-    <state x="655" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1578037737699">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578068826304" />
+    <state x="655" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1578296962896">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="655" y="350" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578037737699" />
+    <state x="655" y="350" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578296962896" />
+    <state x="618" y="195" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1578297780072">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="618" y="195" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578297780072" />
   </component>
 </project>

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a778473-a4aa-47b3-aec7-e5cb6cb93351" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200106124315.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Security/UserEnabledChecker.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +212,7 @@
       <workItem from="1576860206196" duration="4564000" />
       <workItem from="1578037471067" duration="19877000" />
       <workItem from="1578068884082" duration="1654000" />
-      <workItem from="1578296962180" duration="11472000" />
+      <workItem from="1578296962180" duration="12149000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Added webprofiler for debugging&#10;fix: Added blogpost entity to controller blogpost">
       <created>1574846257917</created>
@@ -508,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578314213831</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="feat: User enabled property migration and fixtures">
+      <created>1578314828479</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1578314828479</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -529,7 +536,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: Using is_granted() to control access to operations" />
     <MESSAGE value="feat: BlogPost validation on POST" />
     <MESSAGE value="feat: Setting author of BlogPost automatically (EventSubscriber)" />
     <MESSAGE value="feat:  Making sure only owner of BlogPost can modify it (PUT)" />
@@ -554,7 +560,8 @@
     <MESSAGE value="feat: Configuring custom operation for password reset in User" />
     <MESSAGE value="feat: Creating custom Action class" />
     <MESSAGE value="feat: Invalidating JWT tokens after password reset" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Invalidating JWT tokens after password reset" />
+    <MESSAGE value="feat: User enabled property migration and fixtures" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: User enabled property migration and fixtures" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="184" key="#Intentions" timestamp="1578302279612">
@@ -569,10 +576,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="184" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578038948534" />
-    <state x="765" y="211" key="#com.intellij.ide.util.MemberChooser" timestamp="1578309799928">
+    <state x="765" y="211" key="#com.intellij.ide.util.MemberChooser" timestamp="1578315107294">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="765" y="211" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578309799928" />
+    <state x="765" y="211" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578315107294" />
     <state x="690" y="281" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1578043085248">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -581,10 +588,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="701" y="142" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578042096806" />
-    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578314213263">
+    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578314827907">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578314213263" />
+    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578314827907" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1578304988996">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -593,10 +600,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578038972366" />
-    <state x="707" y="340" key="NewPhpClassDialog" timestamp="1578309579344">
+    <state x="707" y="340" key="NewPhpClassDialog" timestamp="1578315055507">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="707" y="340" key="NewPhpClassDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578309579344" />
+    <state x="707" y="340" key="NewPhpClassDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578315055507" />
     <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1578314216674">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

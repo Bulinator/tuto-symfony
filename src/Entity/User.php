@@ -30,6 +30,15 @@ use Symfony\Component\Validator\Constraints as Assert;
  *                 "groups"={"get"}
  *             }
  *         },
+ *         "put-reset-password"={
+ *             "access_control"="is_granted('IS_AUTHENTICATED_FULLY') and object == user",
+ *             "method"="PUT",
+ *             "path"="/user/{id}/reset-password",
+ *             "controller"=ResetPassword::class,
+ *             "denormalization_context"={
+ *                 "groups"={"put"}
+ *             }
+ *         }
  *     },
  *     collectionOperations={
  *         "post"={

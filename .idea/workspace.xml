@@ -182,17 +182,7 @@
       <list>
         <serviceView>
           <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@3f6d10b1" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </treeState>
         </serviceView>
@@ -220,7 +210,7 @@
       <workItem from="1576860206196" duration="4564000" />
       <workItem from="1578037471067" duration="19877000" />
       <workItem from="1578068884082" duration="1654000" />
-      <workItem from="1578296962180" duration="877000" />
+      <workItem from="1578296962180" duration="1133000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Added webprofiler for debugging&#10;fix: Added blogpost entity to controller blogpost">
       <created>1574846257917</created>
@@ -488,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578068824817</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="feat:  Disabling password hashing for PUT operation">
+      <created>1578297891155</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1578297891156</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -509,7 +506,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: Validation using regular expressions" />
     <MESSAGE value="feat: Preparing jwt token library and keys" />
     <MESSAGE value="feat: Firewall config" />
     <MESSAGE value="feat: Authentication final configuration and first login using JWT token" />
@@ -534,7 +530,8 @@
     <MESSAGE value="feat: Different User view for admins (different serialization of all User entities)" />
     <MESSAGE value="feat: Verifying only admin can see all User's email" />
     <MESSAGE value="feat: User can view his full profile (including email and roles) - custom Normalizer" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: User can view his full profile (including email and roles) - custom Normalizer" />
+    <MESSAGE value="feat:  Disabling password hashing for PUT operation" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:  Disabling password hashing for PUT operation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="184" key="#Notifications" timestamp="1576768360230">
@@ -557,10 +554,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="701" y="142" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578042096806" />
-    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578068824224">
+    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578297890545">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578068824224" />
+    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578297890545" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1578056849041">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

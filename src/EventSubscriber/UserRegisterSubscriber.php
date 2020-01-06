@@ -24,14 +24,25 @@ class UserRegisterSubscriber implements  EventSubscriberInterface
     private $tokenGenerator;
 
     /**
+     * @var \Swift_Mailer
+     */
+    private $mailer;
+
+    /**
      * UserRegisterSubscriber constructor.
      * @param UserPasswordEncoderInterface $passwordEncoder
      * @param TokenGenerator $tokenGenerator
+     * @param \Swift_Mailer $mailer
      */
-    public function __construct(UserPasswordEncoderInterface $passwordEncoder, TokenGenerator $tokenGenerator)
+    public function __construct(
+        UserPasswordEncoderInterface $passwordEncoder,
+        TokenGenerator $tokenGenerator,
+        \Swift_Mailer $mailer
+    )
     {
         $this->passwordEncoder = $passwordEncoder;
         $this->tokenGenerator = $tokenGenerator;
+        $this->mailer = $mailer;
     }
 
     public static function getSubscribedEvents()
@@ -55,8 +66,17 @@ class UserRegisterSubscriber implements  EventSubscriberInterface
             $this->passwordEncoder->encodePassword($user, $user->getPassword())
         );
 
+        // Create confirmation token
         $user->setConfirmationToken(
             $this->tokenGenerator->getRandomSecureToken()
         );
+
+        // Send email here
+        $message = (new \Swift_Message("Hello from api platform (dev)"))
+            ->setFrom('dev@gisis.eu')
+            ->setTo('bulotge@gisis.eu')
+            ->setBody('Hello, how are you ?');
+
+        $this->mailer->send($message);
     }
 }

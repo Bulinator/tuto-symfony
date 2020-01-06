@@ -7,6 +7,7 @@ namespace App\EventSubscriber;
 use ApiPlatform\Core\EventListener\EventPriorities;
 use App\Entity\UserConfirmation;
 use App\Repository\UserRepository;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
@@ -22,12 +23,19 @@ class UserConfirmationSubscriber implements EventSubscriberInterface
     private $userRepository;
 
     /**
+     * @var EntityManagerInterface
+     */
+    private $entityManager;
+
+    /**
      * UserConfirmationSubscriber constructor.
      * @param UserRepository $userRepository
+     * @param EntityManagerInterface $entityManager
      */
-    public function __construct(UserRepository $userRepository)
+    public function __construct(UserRepository $userRepository, EntityManagerInterface $entityManager)
     {
         $this->userRepository = $userRepository;
+        $this->entityManager = $entityManager;
     }
 
     /**
@@ -44,7 +52,7 @@ class UserConfirmationSubscriber implements EventSubscriberInterface
     {
         $request = $event->getRequest();
 
-        if ('api_user_confirmation_post_collection' !== $request->get('_route')) {
+        if ('api_user_confirmations_post_collection' !== $request->get('_route')) {
             return;
         }
         /** @var UserConfirmation $confirmationToken */
@@ -53,7 +61,7 @@ class UserConfirmationSubscriber implements EventSubscriberInterface
             'confirmationToken' => $confirmationToken->confirmationToken
         ]);
 
-        // User was NOT found by confirmation token
+        // User was found by confirmation token
         if (!$user) {
             throw new NotFoundHttpException();
         }

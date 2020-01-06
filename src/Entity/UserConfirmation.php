@@ -6,13 +6,10 @@ use ApiPlatform\Core\Annotation\ApiResource;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
- * Class UserConfirmation
- *
- * @package App\Entity
  * @ApiResource(
  *     collectionOperations={
  *         "post"={
- *             "path"="/users/confirmation"
+ *             "path"="/users/confirm"
  *         }
  *     },
  *     itemOperations={}

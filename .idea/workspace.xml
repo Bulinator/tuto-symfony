@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a778473-a4aa-47b3-aec7-e5cb6cb93351" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/EventSubscriber/UserConfirmationSubscriber.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/UserConfirmation.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/UserConfirmation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventSubscriber/UserConfirmationSubscriber.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventSubscriber/UserConfirmationSubscriber.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +212,7 @@
       <workItem from="1576860206196" duration="4564000" />
       <workItem from="1578037471067" duration="19877000" />
       <workItem from="1578068884082" duration="1654000" />
-      <workItem from="1578296962180" duration="14376000" />
+      <workItem from="1578296962180" duration="16140000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Added webprofiler for debugging&#10;fix: Added blogpost entity to controller blogpost">
       <created>1574846257917</created>
@@ -542,7 +543,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578316940568</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="feat: UserConfirmation EventSubscriber">
+      <created>1578317764568</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1578317764568</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -563,7 +571,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: Hasing password on User changes (PUT) - with Events" />
     <MESSAGE value="feat: Comment resource operations (POST/PUT)" />
     <MESSAGE value="feat: More randomness in fixtures (users)" />
     <MESSAGE value="feat: Setting author automatically (EventSubscriber) - using generic Interface" />
@@ -588,7 +595,8 @@
     <MESSAGE value="feat: Secure confirmation token generation" />
     <MESSAGE value="feat: Generating confirmation token when user signs-up" />
     <MESSAGE value="feat: UserConfirmation custom API Resource" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: UserConfirmation custom API Resource" />
+    <MESSAGE value="feat: UserConfirmation EventSubscriber" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: UserConfirmation EventSubscriber" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="184" key="#Intentions" timestamp="1578302279612">
@@ -619,10 +627,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="701" y="142" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578042096806" />
-    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578316940059">
+    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578317764028">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578316940059" />
+    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578317764028" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1578304988996">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -639,10 +647,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="707" y="340" key="NewPhpClassDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578316983485" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1578314216674">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1578317768704">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578314216674" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578317768704" />
     <state x="655" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1578296962896">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

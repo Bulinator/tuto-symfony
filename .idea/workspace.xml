@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a778473-a4aa-47b3-aec7-e5cb6cb93351" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Email/Mailer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Security/UserConfirmationService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Email/confirmation.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventSubscriber/UserConfirmationSubscriber.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventSubscriber/UserConfirmationSubscriber.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventSubscriber/UserRegisterSubscriber.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventSubscriber/UserRegisterSubscriber.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Email/confirmation.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Email/confirmation.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,14 +217,7 @@
       <workItem from="1576860206196" duration="4564000" />
       <workItem from="1578037471067" duration="19877000" />
       <workItem from="1578068884082" duration="1654000" />
-      <workItem from="1578296962180" duration="19132000" />
-    </task>
-    <task id="LOCAL-00002" summary="feat: ParamConverter - type hinting action for automatic fetching of entities">
-      <created>1574848679780</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1574848679780</updated>
+      <workItem from="1578296962180" duration="19648000" />
     </task>
     <task id="LOCAL-00003" summary="feat: deleting entities">
       <created>1574849014688</created>
@@ -564,7 +555,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578325171990</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="feat: Refactoring UserConfirmation and Mailer into services">
+      <created>1578326882248</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1578326882248</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -585,7 +583,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: Setting author automatically (EventSubscriber) - using generic Interface" />
     <MESSAGE value="feat: Setting published date automatically (EventSubscriber)" />
     <MESSAGE value="feat: API subresources" />
     <MESSAGE value="feat: API subresources (see https://api-platform.com/docs/core/subresources/)" />
@@ -610,7 +607,8 @@
     <MESSAGE value="feat: UserConfirmation EventSubscriber" />
     <MESSAGE value="feat: Verifying Confirmation Token endpoint" />
     <MESSAGE value="feat: Install and configure Swift Mailer" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Install and configure Swift Mailer" />
+    <MESSAGE value="feat: Refactoring UserConfirmation and Mailer into services" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Refactoring UserConfirmation and Mailer into services" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="184" key="#Intentions" timestamp="1578302279612">
@@ -641,10 +639,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="701" y="142" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578042096806" />
-    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578325171391">
+    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578326881701">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578325171391" />
+    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578326881701" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1578304988996">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

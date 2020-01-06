@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a778473-a4aa-47b3-aec7-e5cb6cb93351" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/packages/dev/swiftmailer.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/swiftmailer.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/test/swiftmailer.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Email/Mailer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Security/UserConfirmationService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/Email/confirmation.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventSubscriber/UserRegisterSubscriber.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventSubscriber/UserRegisterSubscriber.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventSubscriber/UserConfirmationSubscriber.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventSubscriber/UserConfirmationSubscriber.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +174,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Timeplanner_v4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
@@ -188,6 +182,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\laragon\www\symfony-tuto\project" />
       <recent name="F:\laragon\www\symfony-tuto\project\src\EventSubscriber" />
     </key>
   </component>
@@ -224,14 +219,7 @@
       <workItem from="1576860206196" duration="4564000" />
       <workItem from="1578037471067" duration="19877000" />
       <workItem from="1578068884082" duration="1654000" />
-      <workItem from="1578296962180" duration="17380000" />
-    </task>
-    <task id="LOCAL-00001" summary="feat: Added webprofiler for debugging&#10;fix: Added blogpost entity to controller blogpost">
-      <created>1574846257917</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1574846257917</updated>
+      <workItem from="1578296962180" duration="19132000" />
     </task>
     <task id="LOCAL-00002" summary="feat: ParamConverter - type hinting action for automatic fetching of entities">
       <created>1574848679780</created>
@@ -569,7 +557,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578322840797</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="feat: Install and configure Swift Mailer">
+      <created>1578325171990</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1578325171990</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -590,7 +585,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: More randomness in fixtures (users)" />
     <MESSAGE value="feat: Setting author automatically (EventSubscriber) - using generic Interface" />
     <MESSAGE value="feat: Setting published date automatically (EventSubscriber)" />
     <MESSAGE value="feat: API subresources" />
@@ -615,7 +609,8 @@
     <MESSAGE value="feat: UserConfirmation custom API Resource" />
     <MESSAGE value="feat: UserConfirmation EventSubscriber" />
     <MESSAGE value="feat: Verifying Confirmation Token endpoint" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Verifying Confirmation Token endpoint" />
+    <MESSAGE value="feat: Install and configure Swift Mailer" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Install and configure Swift Mailer" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="184" key="#Intentions" timestamp="1578302279612">
@@ -630,26 +625,26 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="184" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578038948534" />
-    <state x="765" y="211" key="#com.intellij.ide.util.MemberChooser" timestamp="1578315107294">
+    <state x="765" y="211" key="#com.intellij.ide.util.MemberChooser" timestamp="1578326057329">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="765" y="211" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578315107294" />
+    <state x="765" y="211" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578326057329" />
     <state x="558" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1578316163143">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="558" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578316163143" />
-    <state x="690" y="281" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1578043085248">
+    <state x="690" y="281" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1578326565073">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="690" y="281" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578043085248" />
+    <state x="690" y="281" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578326565073" />
     <state x="701" y="142" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1578042096806">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="701" y="142" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578042096806" />
-    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578322840262">
+    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578325171391">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578322840262" />
+    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578325171391" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1578304988996">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -658,14 +653,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578038972366" />
-    <state x="540" y="261" key="IDE.errors.dialog" timestamp="1578316328728">
+    <state x="540" y="261" key="IDE.errors.dialog" timestamp="1578326852122">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="540" y="261" key="IDE.errors.dialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578316328728" />
-    <state x="707" y="340" key="NewPhpClassDialog" timestamp="1578316983485">
+    <state x="540" y="261" key="IDE.errors.dialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578326852122" />
+    <state x="707" y="340" key="NewPhpClassDialog" timestamp="1578326509150">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="707" y="340" key="NewPhpClassDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578316983485" />
+    <state x="707" y="340" key="NewPhpClassDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578326509150" />
     <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1578322842284">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

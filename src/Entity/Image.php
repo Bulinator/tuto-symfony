@@ -12,7 +12,15 @@ use Vich\UploaderBundle\Mapping\Annotation as Vich;
  * @ORM\Entity;
  * @Vich\Uploadable()
  * @ApiResource(
- *
+ *      collectionOperations={
+ *          "get",
+ *          "posts"={
+ *              "method"="POST",
+ *              "path"="/images",
+ *              "controller"=UploadImageAction::class,
+ *              "defaults"={"_api_receive"=false}
+ *          }
+ *     }
  * )
  */
 class Image

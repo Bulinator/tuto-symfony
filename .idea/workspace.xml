@@ -223,14 +223,7 @@
       <workItem from="1578037471067" duration="19877000" />
       <workItem from="1578068884082" duration="1654000" />
       <workItem from="1578296962180" duration="20463000" />
-      <workItem from="1578383816708" duration="15827000" />
-    </task>
-    <task id="LOCAL-00012" summary="feat: Disabling operations ApiResource">
-      <created>1574940255145</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1574940255146</updated>
+      <workItem from="1578383816708" duration="16127000" />
     </task>
     <task id="LOCAL-00013" summary="feat: EventSubscriber (hashing password)">
       <created>1574949706098</created>
@@ -568,7 +561,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578413875460</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="feat: Search filter">
+      <created>1578414399166</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1578414399166</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -589,7 +589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: Different User view for admins (different serialization of all User entities)" />
     <MESSAGE value="feat: Verifying only admin can see all User's email" />
     <MESSAGE value="feat: User can view his full profile (including email and roles) - custom Normalizer" />
     <MESSAGE value="feat:  Disabling password hashing for PUT operation" />
@@ -614,7 +613,8 @@
     <MESSAGE value="feat: Assigning Image to BlogPost (ManyToMany relation)" />
     <MESSAGE value="feat: Verifying assigning Image to BlogPost, embedding Image inside BlogPost" />
     <MESSAGE value="feat: Configuring default collection sorting order" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Configuring default collection sorting order" />
+    <MESSAGE value="feat: Search filter" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Search filter" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="184" key="#Intentions" timestamp="1578302279612">
@@ -649,10 +649,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="701" y="142" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578042096806" />
-    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578413874876">
+    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578414398530">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578413874876" />
+    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578414398530" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1578397621298">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

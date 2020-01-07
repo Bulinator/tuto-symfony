@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a778473-a4aa-47b3-aec7-e5cb6cb93351" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/geoff.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/ImageType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/5e14aa21971ae621318769.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Image.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Image.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/UploadImageAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UploadImageAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/BlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/BlogPost.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,14 +225,7 @@
       <workItem from="1578037471067" duration="19877000" />
       <workItem from="1578068884082" duration="1654000" />
       <workItem from="1578296962180" duration="20463000" />
-      <workItem from="1578383816708" duration="12944000" />
-    </task>
-    <task id="LOCAL-00008" summary="feat: Fixtures with references (for relations)">
-      <created>1574868407811</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1574868407811</updated>
+      <workItem from="1578383816708" duration="14524000" />
     </task>
     <task id="LOCAL-00009" summary="feat: Fixtures password encoding">
       <created>1574869614677</created>
@@ -571,7 +563,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578387741687</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="feat: Creating Form for file upload (buggy optionresolver)">
+      <created>1578411734147</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1578411734147</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -592,7 +591,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: Adding user role field with migration" />
     <MESSAGE value="feat: User role fixtures" />
     <MESSAGE value="feat: Defining role hierarchy" />
     <MESSAGE value="feat: Verifying only users with specific role can POST resources" />
@@ -617,7 +615,8 @@
     <MESSAGE value="feat: Image entity with migration and @Uploadable annotation" />
     <MESSAGE value="feat: API Resource for Image entity" />
     <MESSAGE value="feat: Implementing custom Action for upload" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Implementing custom Action for upload" />
+    <MESSAGE value="feat: Creating Form for file upload (buggy optionresolver)" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Creating Form for file upload (buggy optionresolver)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="184" key="#Intentions" timestamp="1578302279612">
@@ -632,10 +631,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="184" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578038948534" />
-    <state x="765" y="211" key="#com.intellij.ide.util.MemberChooser" timestamp="1578389278293">
+    <state x="765" y="211" key="#com.intellij.ide.util.MemberChooser" timestamp="1578412859046">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="765" y="211" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578389278293" />
+    <state x="765" y="211" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578412859046" />
     <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1578397597853">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -652,10 +651,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="701" y="142" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578042096806" />
-    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578387741157">
+    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578411733507">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578387741157" />
+    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578411733507" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1578397621298">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

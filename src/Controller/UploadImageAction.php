@@ -1,9 +1,11 @@
 <?php
 
-namespace App\Entity;
+namespace App\Controller;
 
 use ApiPlatform\Core\Validator\Exception\ValidationException;
+use ApiPlatform\Core\Validator\ValidatorInterface;
 use App\Entity\Image;
+use App\Form\ImageType;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Form\FormFactoryInterface;
 use Symfony\Component\HttpFoundation\Request;
@@ -21,22 +23,27 @@ class UploadImageAction
     private $entityManager;
 
     /**
-     * UploadImageAction constructor.
-     * @param FormFactoryInterface $formFactory
-     * @param EntityManagerInterface $entityManager
+     * @var ValidatorInterface
      */
-    public function __construct(FormFactoryInterface $formFactory, EntityManagerInterface $entityManager)
+    private $validator;
+
+    public function __construct(
+        FormFactoryInterface $formFactory,
+        EntityManagerInterface $entityManager,
+        ValidatorInterface $validator
+    )
     {
         $this->formFactory = $formFactory;
         $this->entityManager = $entityManager;
+        $this->validator = $validator;
     }
 
     public function __invoke(Request $request)
     {
-        // Create new image instance
+        // Create a new Image instance
         $image = new Image();
         // Validate the form
-        $form = $this->formFactory->create(null, $image);
+        $form = $this->formFactory->create(ImageType::class, $image);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
@@ -44,17 +51,15 @@ class UploadImageAction
             $this->entityManager->persist($image);
             $this->entityManager->flush();
 
-            // due to binary of file we do not want for the moment
             $image->setFile(null);
 
             return $image;
         }
 
-        // Uploading done for us in background with VichUploader
+        // Uploading done for us in background by VichUploader...
 
-        // throw on validation exception, that means something went wrong during form validation
-        throw new ValidationException(
-            $this->validator->validate($image)
-        );
+        // Throw an validation exception, that means something went wrong during
+        // form validation
+        throw new ValidationException($this->validator->validate($image));
     }
 }

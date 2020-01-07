@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a778473-a4aa-47b3-aec7-e5cb6cb93351" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/geoff.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/ImageType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Image.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Image.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/UploadImageAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/UploadImageAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/UploadImageAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UploadImageAction.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,13 +177,16 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../pwm" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="php.override.implement.member.chooser.php.doc" value="DEFAULT" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\laragon\www\symfony-tuto\project\src\Controller" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\laragon\www\symfony-tuto\project" />
       <recent name="F:\laragon\www\symfony-tuto\project\src\EventSubscriber" />
@@ -221,14 +226,7 @@
       <workItem from="1578037471067" duration="19877000" />
       <workItem from="1578068884082" duration="1654000" />
       <workItem from="1578296962180" duration="20463000" />
-      <workItem from="1578383816708" duration="3366000" />
-    </task>
-    <task id="LOCAL-00007" summary="feat: Model manyToOne relation and migration">
-      <created>1574860998326</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1574860998326</updated>
+      <workItem from="1578383816708" duration="12944000" />
     </task>
     <task id="LOCAL-00008" summary="feat: Fixtures with references (for relations)">
       <created>1574868407811</created>
@@ -566,7 +564,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578386543917</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="feat: Implementing custom Action for upload">
+      <created>1578387741687</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1578387741687</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -587,7 +592,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: API subresources Embedding Author resource inside BlogPost" />
     <MESSAGE value="feat: Adding user role field with migration" />
     <MESSAGE value="feat: User role fixtures" />
     <MESSAGE value="feat: Defining role hierarchy" />
@@ -612,7 +616,8 @@
     <MESSAGE value="feat: Install and configure uploading library" />
     <MESSAGE value="feat: Image entity with migration and @Uploadable annotation" />
     <MESSAGE value="feat: API Resource for Image entity" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: API Resource for Image entity" />
+    <MESSAGE value="feat: Implementing custom Action for upload" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Implementing custom Action for upload" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="184" key="#Intentions" timestamp="1578302279612">
@@ -627,10 +632,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="184" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578038948534" />
-    <state x="765" y="211" key="#com.intellij.ide.util.MemberChooser" timestamp="1578385957512">
+    <state x="765" y="211" key="#com.intellij.ide.util.MemberChooser" timestamp="1578389278293">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="765" y="211" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578385957512" />
+    <state x="765" y="211" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578389278293" />
+    <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1578397597853">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578397597853" />
     <state x="558" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1578316163143">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -643,14 +652,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="701" y="142" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578042096806" />
-    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578386543362">
+    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578387741157">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578386543362" />
-    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1578304988996">
+    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578387741157" />
+    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1578397621298">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578304988996" />
+    <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578397621298" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1578038972366">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -659,14 +668,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="540" y="261" key="IDE.errors.dialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578326852122" />
-    <state x="707" y="340" key="NewPhpClassDialog" timestamp="1578386423092">
+    <state x="707" y="340" key="NewPhpClassDialog" timestamp="1578389205579">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="707" y="340" key="NewPhpClassDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578386423092" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1578328266697">
+    <state x="707" y="340" key="NewPhpClassDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578389205579" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1578387744368">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578328266697" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578387744368" />
     <state x="655" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1578383819392">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -675,5 +684,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="618" y="195" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578297780072" />
+    <state x="657" y="257" width="606" height="536" key="find.popup" timestamp="1578390743306">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="657" y="257" width="606" height="536" key="find.popup/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578390743306" />
   </component>
 </project>

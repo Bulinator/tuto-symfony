@@ -4,23 +4,22 @@ namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\ORM\Mapping as ORM;
-use Vich\UploaderBundle\Mapping\Annotation as Vich;
+use Symfony\Component\Serializer\Annotation\Groups;
 use Symfony\Component\Validator\Constraints as Assert;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
+use App\Controller\UploadImageAction;
 
 /**
- * Class Image
- *
- * @ORM\Entity;
+ * @ORM\Entity()
  * @Vich\Uploadable()
  * @ApiResource(
- *      collectionOperations={
- *          "get",
- *          "posts"={
- *              "method"="POST",
- *              "path"="/images",
- *              "controller"=UploadImageAction::class,
- *              "defaults"={"_api_receive"=false}
- *          }
+ *     collectionOperations={
+ *         "get",
+ *         "post"={
+ *             "path"="/images",
+ *             "controller"=UploadImageAction::class,
+ *             "defaults"={"_api_receive"=false}
+ *         }
  *     }
  * )
  */
@@ -44,53 +43,28 @@ class Image
      */
     private $url;
 
-    /**
-     * @return mixed
-     */
     public function getId()
     {
         return $this->id;
     }
 
-    /**
-     * @param mixed $id
-     */
-    public function setId($id): void
-    {
-        $this->id = $id;
-    }
-
-    /**
-     * @return mixed
-     */
     public function getFile()
     {
         return $this->file;
     }
 
-    /**
-     * @param mixed $file
-     */
     public function setFile($file): void
     {
         $this->file = $file;
     }
 
-    /**
-     * @return mixed
-     */
     public function getUrl()
     {
-        return $this->url;
+        return '/images/' . $this->url;
     }
 
-    /**
-     * @param mixed $url
-     */
     public function setUrl($url): void
     {
         $this->url = $url;
     }
-
-
 }

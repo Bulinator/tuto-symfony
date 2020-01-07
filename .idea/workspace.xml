@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a778473-a4aa-47b3-aec7-e5cb6cb93351" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Entity/UploadImageAction.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Image.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Image.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/UploadImageAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/UploadImageAction.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,14 +221,7 @@
       <workItem from="1578037471067" duration="19877000" />
       <workItem from="1578068884082" duration="1654000" />
       <workItem from="1578296962180" duration="20463000" />
-      <workItem from="1578383816708" duration="2282000" />
-    </task>
-    <task id="LOCAL-00006" summary="feat: add api platform component">
-      <created>1574850474827</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1574850474827</updated>
+      <workItem from="1578383816708" duration="3366000" />
     </task>
     <task id="LOCAL-00007" summary="feat: Model manyToOne relation and migration">
       <created>1574860998326</created>
@@ -566,7 +559,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578386142399</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="feat: API Resource for Image entity">
+      <created>1578386543917</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1578386543917</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -587,7 +587,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: API subresources Controlling how deep relations are serialized" />
     <MESSAGE value="feat: API subresources Embedding Author resource inside BlogPost" />
     <MESSAGE value="feat: Adding user role field with migration" />
     <MESSAGE value="feat: User role fixtures" />
@@ -612,7 +611,8 @@
     <MESSAGE value="feat: Traditional (non API) account confirmation route (for e-mail)" />
     <MESSAGE value="feat: Install and configure uploading library" />
     <MESSAGE value="feat: Image entity with migration and @Uploadable annotation" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Image entity with migration and @Uploadable annotation" />
+    <MESSAGE value="feat: API Resource for Image entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: API Resource for Image entity" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="184" key="#Intentions" timestamp="1578302279612">
@@ -643,10 +643,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="701" y="142" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578042096806" />
-    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578386141838">
+    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578386543362">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578386141838" />
+    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578386543362" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1578304988996">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9a778473-a4aa-47b3-aec7-e5cb6cb93351" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/BlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/BlogPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/api_platform.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/api_platform.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Comment.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,14 +224,8 @@
       <workItem from="1578037471067" duration="19877000" />
       <workItem from="1578068884082" duration="1654000" />
       <workItem from="1578296962180" duration="20463000" />
-      <workItem from="1578383816708" duration="17413000" />
-    </task>
-    <task id="LOCAL-00017" summary="feat: Firewall config">
-      <created>1576595349172</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1576595349172</updated>
+      <workItem from="1578383816708" duration="17435000" />
+      <workItem from="1578470539310" duration="1172000" />
     </task>
     <task id="LOCAL-00018" summary="feat: Authentication final configuration and first login using JWT token">
       <created>1576597776737</created>
@@ -568,7 +563,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578415698596</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="feat: Property Filter">
+      <created>1578415992618</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1578415992618</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -589,7 +591,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: Creating custom Action class" />
     <MESSAGE value="feat: Invalidating JWT tokens after password reset" />
     <MESSAGE value="feat: User enabled property migration and fixtures" />
     <MESSAGE value="feat: Implementing UserChecker to verify if account is enabled" />
@@ -614,7 +615,8 @@
     <MESSAGE value="feat: Range filter" />
     <MESSAGE value="feat: Sorting filter" />
     <MESSAGE value="feat: Filtering by nested properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Filtering by nested properties" />
+    <MESSAGE value="feat: Property Filter" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Property Filter" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="184" key="#Intentions" timestamp="1578302279612">
@@ -649,10 +651,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="701" y="142" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578042096806" />
-    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578415697958">
+    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578415991933">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578415697958" />
+    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578415991933" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1578397621298">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -669,14 +671,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="707" y="340" key="NewPhpClassDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578389205579" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1578413569249">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1578415994412">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578413569249" />
-    <state x="655" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1578383819392">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578415994412" />
+    <state x="655" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1578470541720">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="655" y="350" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578383819392" />
+    <state x="655" y="350" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578470541720" />
     <state x="618" y="195" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1578297780072">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

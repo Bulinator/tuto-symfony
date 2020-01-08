@@ -17,15 +17,19 @@ class EmptyBodySubscriber implements EventSubscriberInterface
     public static function getSubscribedEvents()
     {
         return [
-            KernelEvents::REQUEST => ['handleEmptyBody', EventPriorities::PRE_DESERIALIZE]
+            KernelEvents::REQUEST => ['handleEmptyBody', EventPriorities::POST_DESERIALIZE]
         ];
     }
 
     public function handleEmptyBody(RequestEvent $event)
     {
-        $method = $event->getRequest()->getMethod();
+        $request = $event->getRequest();
+        $method = $request->getMethod();
+        $route = $request->get('_route');
 
-        if (!in_array($method, [Request::METHOD_POST, Request::METHOD_PUT])) {
+        if (!in_array($method, [Request::METHOD_POST, Request::METHOD_PUT]) ||
+            in_array($request->getContentType(), ['html', 'form']) ||
+            substr($route, 0, 3) !== 'api') {
             return;
         }
 

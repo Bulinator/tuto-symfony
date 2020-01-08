@@ -195,7 +195,17 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@5f955dd4" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -225,14 +235,7 @@
       <workItem from="1578068884082" duration="1654000" />
       <workItem from="1578296962180" duration="20463000" />
       <workItem from="1578383816708" duration="17435000" />
-      <workItem from="1578470539310" duration="1172000" />
-    </task>
-    <task id="LOCAL-00018" summary="feat: Authentication final configuration and first login using JWT token">
-      <created>1576597776737</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1576597776737</updated>
+      <workItem from="1578470539310" duration="2275000" />
     </task>
     <task id="LOCAL-00019" summary="feat: Using is_granted() to control access to operations">
       <created>1576598432714</created>
@@ -570,7 +573,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578415992618</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="feat: Configuring collection pagination">
+      <created>1578472033027</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1578472033028</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -591,7 +601,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: Invalidating JWT tokens after password reset" />
     <MESSAGE value="feat: User enabled property migration and fixtures" />
     <MESSAGE value="feat: Implementing UserChecker to verify if account is enabled" />
     <MESSAGE value="feat: Secure confirmation token generation" />
@@ -616,7 +625,8 @@
     <MESSAGE value="feat: Sorting filter" />
     <MESSAGE value="feat: Filtering by nested properties" />
     <MESSAGE value="feat: Property Filter" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Property Filter" />
+    <MESSAGE value="feat: Configuring collection pagination" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Configuring collection pagination" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="184" key="#Intentions" timestamp="1578302279612">
@@ -651,10 +661,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="701" y="142" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578042096806" />
-    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578415991933">
+    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578472032326">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578415991933" />
+    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578472032326" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1578397621298">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

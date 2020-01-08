@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a778473-a4aa-47b3-aec7-e5cb6cb93351" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/EventSubscriber/AuthoredEntitySubscriberTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/EventSubscriber/AuthoredEntitySubscriberTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/EventSubscriber/AuthoredEntitySubscriberTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,14 +228,7 @@
       <workItem from="1578068884082" duration="1654000" />
       <workItem from="1578296962180" duration="20463000" />
       <workItem from="1578383816708" duration="17435000" />
-      <workItem from="1578470539310" duration="9839000" />
-    </task>
-    <task id="LOCAL-00028" summary="feat: Setting published date automatically (EventSubscriber)">
-      <created>1578047668414</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1578047668414</updated>
+      <workItem from="1578470539310" duration="10935000" />
     </task>
     <task id="LOCAL-00029" summary="feat: API subresources (see https://api-platform.com/docs/core/subresources/)">
       <created>1578048476831</created>
@@ -573,7 +566,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578496513702</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="feat: Testing EventSubscriber static configuration">
+      <created>1578497011521</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1578497011521</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -594,7 +594,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: Traditional (non API) account confirmation route (for e-mail)" />
     <MESSAGE value="feat: Install and configure uploading library" />
     <MESSAGE value="feat: Image entity with migration and @Uploadable annotation" />
     <MESSAGE value="feat: API Resource for Image entity" />
@@ -619,7 +618,8 @@
     <MESSAGE value="feat: Defining custom logging channel" />
     <MESSAGE value="feat: Logging to separate files per channel" />
     <MESSAGE value="feat: Installing PHPUnit and writing first basic unit test" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Installing PHPUnit and writing first basic unit test" />
+    <MESSAGE value="feat: Testing EventSubscriber static configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Testing EventSubscriber static configuration" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="184" key="#Intentions" timestamp="1578302279612">
@@ -658,10 +658,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="701" y="142" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578042096806" />
-    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578496513109">
+    <state x="701" y="69" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1" timestamp="1578498087235">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578496513109" />
+    <state x="701" y="69" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578498087235" />
+    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578497010948">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578497010948" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1578397621298">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

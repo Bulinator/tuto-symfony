@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a778473-a4aa-47b3-aec7-e5cb6cb93351" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/phpunit" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/SimplestTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/EventSubscriber/AuthoredEntitySubscriberTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,14 +228,7 @@
       <workItem from="1578068884082" duration="1654000" />
       <workItem from="1578296962180" duration="20463000" />
       <workItem from="1578383816708" duration="17435000" />
-      <workItem from="1578470539310" duration="9265000" />
-    </task>
-    <task id="LOCAL-00027" summary="feat: Setting author automatically (EventSubscriber) - using generic Interface">
-      <created>1578043812636</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1578043812636</updated>
+      <workItem from="1578470539310" duration="9839000" />
     </task>
     <task id="LOCAL-00028" summary="feat: Setting published date automatically (EventSubscriber)">
       <created>1578047668414</created>
@@ -583,7 +566,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578492355867</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="feat: Installing PHPUnit and writing first basic unit test">
+      <created>1578496513702</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1578496513702</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -604,7 +594,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: Refactoring UserConfirmation and Mailer into services" />
     <MESSAGE value="feat: Traditional (non API) account confirmation route (for e-mail)" />
     <MESSAGE value="feat: Install and configure uploading library" />
     <MESSAGE value="feat: Image entity with migration and @Uploadable annotation" />
@@ -629,7 +618,8 @@
     <MESSAGE value="feat: Installing Monolog library for application logging" />
     <MESSAGE value="feat: Defining custom logging channel" />
     <MESSAGE value="feat: Logging to separate files per channel" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Logging to separate files per channel" />
+    <MESSAGE value="feat: Installing PHPUnit and writing first basic unit test" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Installing PHPUnit and writing first basic unit test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="184" key="#Intentions" timestamp="1578302279612">
@@ -668,10 +658,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="701" y="142" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578042096806" />
-    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578492355289">
+    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578496513109">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578492355289" />
+    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578496513109" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1578397621298">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -684,10 +674,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="540" y="261" key="IDE.errors.dialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578326852122" />
-    <state x="707" y="340" key="NewPhpClassDialog" timestamp="1578496195456">
+    <state x="707" y="340" key="NewPhpClassDialog" timestamp="1578496626340">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="707" y="340" key="NewPhpClassDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578496195456" />
+    <state x="707" y="340" key="NewPhpClassDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578496626340" />
     <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1578492357491">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a778473-a4aa-47b3-aec7-e5cb6cb93351" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/EventSubscriber/EmptyBodySubscriber.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exception/EmptyBodyException.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/api_platform.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/api_platform.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,14 +234,7 @@
       <workItem from="1578068884082" duration="1654000" />
       <workItem from="1578296962180" duration="20463000" />
       <workItem from="1578383816708" duration="17435000" />
-      <workItem from="1578470539310" duration="3644000" />
-    </task>
-    <task id="LOCAL-00021" summary="feat: Setting author of BlogPost automatically (EventSubscriber)">
-      <created>1576862763993</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1576862763993</updated>
+      <workItem from="1578470539310" duration="3940000" />
     </task>
     <task id="LOCAL-00022" summary="feat:  Making sure only owner of BlogPost can modify it (PUT)">
       <created>1576863193229</created>
@@ -581,7 +572,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578478414152</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="feat: Handling error when empty request body">
+      <created>1578479486974</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1578479486974</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -602,7 +600,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: Secure confirmation token generation" />
     <MESSAGE value="feat: Generating confirmation token when user signs-up" />
     <MESSAGE value="feat: UserConfirmation custom API Resource" />
     <MESSAGE value="feat: UserConfirmation EventSubscriber" />
@@ -627,7 +624,8 @@
     <MESSAGE value="feat: Configuring collection pagination" />
     <MESSAGE value="feat: Configuring collection pagination part 2" />
     <MESSAGE value="feat: Partial pagination (performance gain)" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Partial pagination (performance gain)" />
+    <MESSAGE value="feat: Handling error when empty request body" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Handling error when empty request body" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="184" key="#Intentions" timestamp="1578302279612">
@@ -662,10 +660,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="701" y="142" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578042096806" />
-    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578478413595">
+    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578479486368">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578478413595" />
+    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578479486368" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1578397621298">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

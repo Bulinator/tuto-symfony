@@ -49,7 +49,8 @@ use App\Controller\ResetPasswordAction;
  *             },
  *            "normalization_context"={
  *                 "groups"={"get"}
- *            }
+ *            },
+ *            "validation_groups"={"post"}
  *         }
  *     }
  * )

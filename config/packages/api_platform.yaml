@@ -18,6 +18,9 @@ api_platform:
             client_items_per_page: true # Disabled by default
             items_per_page_parameter_name: itemPerPage
             maximum_items_per_page: 20 # override all items per page params
+            partial: false
+            client_partial: true
+            partial_parameter_name: 'partial'
     # set order parameter name globally
     # collection
         # order_parameter_name: '_order'

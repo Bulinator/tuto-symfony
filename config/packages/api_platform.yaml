@@ -23,6 +23,7 @@ api_platform:
             partial_parameter_name: 'partial'
     exception_to_status:
         App\Exception\EmptyBodyException: 400
+        App\Exception\InvalidConfirmationTokenException: 404
     # set order parameter name globally
     # collection
         # order_parameter_name: '_order'

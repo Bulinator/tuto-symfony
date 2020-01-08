@@ -21,6 +21,8 @@ api_platform:
             partial: false
             client_partial: true
             partial_parameter_name: 'partial'
+    exception_to_status:
+        App\Exception\EmptyBodyException: 400
     # set order parameter name globally
     # collection
         # order_parameter_name: '_order'

@@ -7,6 +7,7 @@ use App\Entity\BlogPost;
 use App\Entity\User;
 use App\EventSubscriber\AuthoredEntitySubscriber;
 use PHPUnit\Framework\TestCase;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Event\ViewEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
@@ -27,10 +28,16 @@ class AuthoredEntitySubscriberTest extends TestCase
 
     public function testSetAuthorCall()
     {
+        $entityMock = $this->getEntityMock(BlogPost::class, true);
+
         $tokenStorageMock = $this->getTokenStorageMock();
+        $eventMock = $this->getEventMock('POST', $entityMock);
+        (new AuthoredEntitySubscriber($tokenStorageMock))->getAuthenticatedUser($eventMock);
 
-        $eventMock = $this->getEventMock();
+        $entityMock = $this->getEntityMock('Nonexisting', false);
 
+        $tokenStorageMock = $this->getTokenStorageMock();
+        $eventMock = $this->getEventMock('GET', $entityMock);
         (new AuthoredEntitySubscriber($tokenStorageMock))->getAuthenticatedUser($eventMock);
     }
 
@@ -57,6 +64,11 @@ class AuthoredEntitySubscriberTest extends TestCase
      */
     private function getEventMock(): \PHPUnit\Framework\MockObject\MockObject
     {
+        $requestMock = $this->getMockBuilder(Request::class)->getMock();
+        $requestMock->expects($this->once())
+            ->method('getMethod')
+            ->willReturn('POST');
+
         $eventMock = $this->getMockBuilder(ViewEvent::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -65,6 +77,25 @@ class AuthoredEntitySubscriberTest extends TestCase
             ->method('getControllerResult')
             ->willReturn(new BlogPost());
 
+        $eventMock->expects($this->once())
+            ->method('getRequest')
+            ->willReturn($requestMock);
+
         return $eventMock;
+    }
+
+    /**
+     * @param $className
+     * @param $shouldCallSetAuthor
+     * @return \PHPUnit\Framework\MockObject\MockObject
+     */
+    private function getEntityMock($className, $shouldCallSetAuthor): \PHPUnit\Framework\MockObject\MockObject
+    {
+        $entityMock = $this->getMockBuilder($className)
+            ->setMethods(['setAuthor'])
+            ->getMock();
+        $entityMock->expects($shouldCallSetAuthor ? $$this->once() : $this->never())
+            ->method('setAuthor');
+        return $entityMock;
     }
 }

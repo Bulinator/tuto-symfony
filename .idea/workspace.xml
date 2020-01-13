@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a778473-a4aa-47b3-aec7-e5cb6cb93351" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/geoff.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/geoff.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/EventSubscriber/AuthoredEntitySubscriberTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/EventSubscriber/AuthoredEntitySubscriberTest.php" afterDir="false" />
     </list>
@@ -230,14 +229,7 @@
       <workItem from="1578296962180" duration="20463000" />
       <workItem from="1578383816708" duration="17435000" />
       <workItem from="1578470539310" duration="12294000" />
-      <workItem from="1578902223420" duration="2996000" />
-    </task>
-    <task id="LOCAL-00031" summary="feat: API subresources Embedding Author resource inside BlogPost">
-      <created>1578050432843</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1578050432843</updated>
+      <workItem from="1578902223420" duration="3551000" />
     </task>
     <task id="LOCAL-00032" summary="feat: Adding user role field with migration">
       <created>1578062080504</created>
@@ -575,7 +567,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578903981721</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="feat: Data providers in tests (using many data sets in 1 test case)">
+      <created>1578905485158</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1578905485158</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -596,7 +595,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: API Resource for Image entity" />
     <MESSAGE value="feat: Implementing custom Action for upload" />
     <MESSAGE value="feat: Creating Form for file upload (buggy optionresolver)" />
     <MESSAGE value="feat: Assigning Image to BlogPost (ManyToMany relation)" />
@@ -621,7 +619,8 @@
     <MESSAGE value="feat: Testing EventSubscriber static configuration" />
     <MESSAGE value="feat: Event class Mock, extracting repeated mock factory code" />
     <MESSAGE value="feat: Full test for AuthoredEntitySubscriber" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Full test for AuthoredEntitySubscriber" />
+    <MESSAGE value="feat: Data providers in tests (using many data sets in 1 test case)" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Data providers in tests (using many data sets in 1 test case)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="184" key="#Intentions" timestamp="1578302279612">
@@ -664,10 +663,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="701" y="69" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578903726966" />
-    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578903981092">
+    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578905484545">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578903981092" />
+    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578905484545" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1578397621298">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a778473-a4aa-47b3-aec7-e5cb6cb93351" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/geoff.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/geoff.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/EventSubscriber/AuthoredEntitySubscriberTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/EventSubscriber/AuthoredEntitySubscriberTest.php" afterDir="false" />
     </list>
@@ -229,14 +230,7 @@
       <workItem from="1578296962180" duration="20463000" />
       <workItem from="1578383816708" duration="17435000" />
       <workItem from="1578470539310" duration="12294000" />
-      <workItem from="1578902223420" duration="1535000" />
-    </task>
-    <task id="LOCAL-00030" summary="feat: API subresources Controlling how deep relations are serialized">
-      <created>1578049615459</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1578049615459</updated>
+      <workItem from="1578902223420" duration="2996000" />
     </task>
     <task id="LOCAL-00031" summary="feat: API subresources Embedding Author resource inside BlogPost">
       <created>1578050432843</created>
@@ -574,7 +568,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578498245456</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="feat: Full test for AuthoredEntitySubscriber">
+      <created>1578903981721</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1578903981721</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -595,7 +596,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: Image entity with migration and @Uploadable annotation" />
     <MESSAGE value="feat: API Resource for Image entity" />
     <MESSAGE value="feat: Implementing custom Action for upload" />
     <MESSAGE value="feat: Creating Form for file upload (buggy optionresolver)" />
@@ -620,7 +620,8 @@
     <MESSAGE value="feat: Installing PHPUnit and writing first basic unit test" />
     <MESSAGE value="feat: Testing EventSubscriber static configuration" />
     <MESSAGE value="feat: Event class Mock, extracting repeated mock factory code" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Event class Mock, extracting repeated mock factory code" />
+    <MESSAGE value="feat: Full test for AuthoredEntitySubscriber" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Full test for AuthoredEntitySubscriber" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="184" key="#Intentions" timestamp="1578302279612">
@@ -663,10 +664,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="701" y="69" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578903726966" />
-    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578498244911">
+    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578903981092">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578498244911" />
+    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578903981092" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1578397621298">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -683,10 +684,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="707" y="340" key="NewPhpClassDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578496626340" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1578498248199">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1578903985528">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578498248199" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578903985528" />
     <state x="655" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1578902229802">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

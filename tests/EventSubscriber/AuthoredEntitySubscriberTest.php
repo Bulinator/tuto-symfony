@@ -26,19 +26,36 @@ class AuthoredEntitySubscriberTest extends TestCase
         );
     }
 
-    public function testSetAuthorCall()
+    /**
+     * @dataProvider providerSetAuthorCall
+     *
+     * @param string $className
+     * @param bool $shouldCallSetAuthor
+     * @param string $method
+     */
+    public function testSetAuthorCall(string $className, bool $shouldCallSetAuthor, string $method)
     {
-        $entityMock = $this->getEntityMock(BlogPost::class, true);
-
+        $entityMock = $this->getEntityMock($className, $shouldCallSetAuthor);
         $tokenStorageMock = $this->getTokenStorageMock();
-        $eventMock = $this->getEventMock('POST', $entityMock);
+        $eventMock = $this->getEventMock($method, $entityMock);
+
         (new AuthoredEntitySubscriber($tokenStorageMock))->getAuthenticatedUser($eventMock);
 
-        $entityMock = $this->getEntityMock('Nonexisting', false);
+    }
 
-        $tokenStorageMock = $this->getTokenStorageMock();
-        $eventMock = $this->getEventMock('GET', $entityMock);
-        (new AuthoredEntitySubscriber($tokenStorageMock))->getAuthenticatedUser($eventMock);
+    /**
+     * Call testSetAuthorCall automatically
+     * with all scenario we prodived
+     *
+     * @return array
+     */
+    public function providerSetAuthorCall(): array
+    {
+        return [
+            [BlogPost::class, true, 'POST'],
+            [BlogPost::class, false, 'GET'],
+            ['NonExisting', false, 'POST']
+        ];
     }
 
     /**
@@ -60,14 +77,16 @@ class AuthoredEntitySubscriberTest extends TestCase
     }
 
     /**
+     * @param string $method
+     * @param $controllerResult
      * @return \PHPUnit\Framework\MockObject\MockObject
      */
-    private function getEventMock(): \PHPUnit\Framework\MockObject\MockObject
+    private function getEventMock(string $method, $controllerResult): \PHPUnit\Framework\MockObject\MockObject
     {
         $requestMock = $this->getMockBuilder(Request::class)->getMock();
         $requestMock->expects($this->once())
             ->method('getMethod')
-            ->willReturn('POST');
+            ->willReturn($method);
 
         $eventMock = $this->getMockBuilder(ViewEvent::class)
             ->disableOriginalConstructor()
@@ -75,7 +94,7 @@ class AuthoredEntitySubscriberTest extends TestCase
 
         $eventMock->expects($this->once())
             ->method('getControllerResult')
-            ->willReturn(new BlogPost());
+            ->willReturn($controllerResult);
 
         $eventMock->expects($this->once())
             ->method('getRequest')
@@ -89,13 +108,14 @@ class AuthoredEntitySubscriberTest extends TestCase
      * @param $shouldCallSetAuthor
      * @return \PHPUnit\Framework\MockObject\MockObject
      */
-    private function getEntityMock($className, $shouldCallSetAuthor): \PHPUnit\Framework\MockObject\MockObject
+    private function getEntityMock(string $className, bool $shouldCallSetAuthor): \PHPUnit\Framework\MockObject\MockObject
     {
         $entityMock = $this->getMockBuilder($className)
             ->setMethods(['setAuthor'])
             ->getMock();
-        $entityMock->expects($shouldCallSetAuthor ? $$this->once() : $this->never())
+        $entityMock->expects($shouldCallSetAuthor ? $this->once() : $this->never())
             ->method('setAuthor');
+
         return $entityMock;
     }
 }

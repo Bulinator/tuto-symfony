@@ -2,6 +2,7 @@
   <dictionary name="geoff">
     <words>
       <w>csrf</w>
+      <w>nonexisting</w>
     </words>
   </dictionary>
 </component>

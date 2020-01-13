@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a778473-a4aa-47b3-aec7-e5cb6cb93351" name="Default Changelist" comment="">
+    <list default="true" id="9a778473-a4aa-47b3-aec7-e5cb6cb93351" name="Default Changelist" comment="feat: Finding potential errors using unit tests (null Token example)">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/EventSubscriber/AuthoredEntitySubscriberTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/EventSubscriber/AuthoredEntitySubscriberTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +46,13 @@
       </path>
     </expand>
     <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -178,19 +186,27 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../pwm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Timeplanner_v4" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="DEFAULT" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\laragon\www\symfony-tuto\project\src\Controller" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\laragon\www\symfony-tuto\project" />
       <recent name="F:\laragon\www\symfony-tuto\project\src\EventSubscriber" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\laragon\www\symfony-tuto\api-platform-react-js\src" />
+      <recent name="F:\laragon\www\symfony-tuto\project\src\Controller" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -229,14 +245,9 @@
       <workItem from="1578296962180" duration="20463000" />
       <workItem from="1578383816708" duration="17435000" />
       <workItem from="1578470539310" duration="12294000" />
-      <workItem from="1578902223420" duration="3551000" />
-    </task>
-    <task id="LOCAL-00032" summary="feat: Adding user role field with migration">
-      <created>1578062080504</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1578062080504</updated>
+      <workItem from="1578902223420" duration="4670000" />
+      <workItem from="1578907221869" duration="13484000" />
+      <workItem from="1578927767107" duration="2620000" />
     </task>
     <task id="LOCAL-00033" summary="feat: User role fixtures">
       <created>1578063017893</created>
@@ -574,7 +585,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578905485158</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="feat: Finding potential errors using unit tests (null Token example)">
+      <created>1578905891599</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1578905891599</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -595,7 +613,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: Implementing custom Action for upload" />
     <MESSAGE value="feat: Creating Form for file upload (buggy optionresolver)" />
     <MESSAGE value="feat: Assigning Image to BlogPost (ManyToMany relation)" />
     <MESSAGE value="feat: Verifying assigning Image to BlogPost, embedding Image inside BlogPost" />
@@ -620,7 +637,8 @@
     <MESSAGE value="feat: Event class Mock, extracting repeated mock factory code" />
     <MESSAGE value="feat: Full test for AuthoredEntitySubscriber" />
     <MESSAGE value="feat: Data providers in tests (using many data sets in 1 test case)" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Data providers in tests (using many data sets in 1 test case)" />
+    <MESSAGE value="feat: Finding potential errors using unit tests (null Token example)" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Finding potential errors using unit tests (null Token example)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="184" key="#Intentions" timestamp="1578302279612">
@@ -663,14 +681,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="701" y="69" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578903726966" />
-    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578905484545">
+    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1578909322465">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578905484545" />
-    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1578397621298">
+    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578909322465" />
+    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1578912153571">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578397621298" />
+    <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578912153571" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1578038972366">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -683,21 +701,29 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="707" y="340" key="NewPhpClassDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578496626340" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1578903985528">
+    <state x="461" y="168" key="SettingsEditor" timestamp="1578908504148">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578903985528" />
-    <state x="655" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1578902229802">
+    <state x="461" y="168" key="SettingsEditor/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578908504148" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1578905893373">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="655" y="350" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578902229802" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578905893373" />
+    <state x="655" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1578927899226">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="655" y="350" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578927899226" />
     <state x="618" y="195" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1578297780072">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="618" y="195" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578297780072" />
-    <state x="657" y="257" width="606" height="536" key="find.popup" timestamp="1578902336167">
+    <state x="769" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578918951789">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="657" y="257" width="606" height="536" key="find.popup/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578902336167" />
+    <state x="769" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578918951789" />
+    <state x="657" y="257" width="606" height="536" key="find.popup" timestamp="1578921235934">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="657" y="257" width="606" height="536" key="find.popup/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578921235934" />
   </component>
 </project>

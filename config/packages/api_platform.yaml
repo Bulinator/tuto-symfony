@@ -6,7 +6,7 @@ api_platform:
     swagger:
         versions: [3]
     eager_loading:
-        enabled: true
+        enabled: false
     collection:
         pagination:
 #            enabled: false

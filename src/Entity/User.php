@@ -19,7 +19,7 @@ use App\Controller\ResetPasswordAction;
  *         "get"={
  *             "access_control"="is_granted('IS_AUTHENTICATED_FULLY')",
  *             "normalization_context"={
- *                 "groups"={"get"}
+ *                 "groups"={"get", "get-blog-post-with-author"}
  *             }
  *         },
  *         "put"={

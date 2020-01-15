@@ -251,14 +251,7 @@
       <workItem from="1578987975274" duration="6595000" />
       <workItem from="1578995803269" duration="15353000" />
       <workItem from="1579075095383" duration="847000" />
-      <workItem from="1579076768808" duration="15346000" />
-    </task>
-    <task id="LOCAL-00039" summary="feat:  Disabling password hashing for PUT operation">
-      <created>1578297891155</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1578297891156</updated>
+      <workItem from="1579076768808" duration="16966000" />
     </task>
     <task id="LOCAL-00040" summary="feat: Configuring custom operation for password reset in User">
       <created>1578298110897</created>
@@ -596,7 +589,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579096114358</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="fixed: dev test">
+      <created>1579096519363</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1579096519363</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -685,10 +685,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="701" y="69" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578903726966" />
-    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1579096113645">
+    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1579096518788">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1579096113645" />
+    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1579096518788" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1579075340639">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -709,10 +709,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="168" key="SettingsEditor/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578995793907" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1579096115406">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1579096520599">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1579096115406" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1579096520599" />
     <state x="655" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1579076779673">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

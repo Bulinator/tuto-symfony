@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9a778473-a4aa-47b3-aec7-e5cb6cb93351" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/api_platform.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/api_platform.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/lexik_jwt_authentication.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/lexik_jwt_authentication.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +185,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../api-platform-react-js/src/reducers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Timeplanner_v4" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -199,14 +199,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\laragon\www\symfony-tuto\api-platform-react-js\src" />
-      <recent name="F:\laragon\www\symfony-tuto\project\src\Controller" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\laragon\www\symfony-tuto\api-platform-react-js\src\reducers" />
       <recent name="F:\laragon\www\symfony-tuto\project" />
       <recent name="F:\laragon\www\symfony-tuto\project\src\EventSubscriber" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\laragon\www\symfony-tuto\api-platform-react-js\src\components" />
+      <recent name="F:\laragon\www\symfony-tuto\api-platform-react-js\src" />
+      <recent name="F:\laragon\www\symfony-tuto\project\src\Controller" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -249,14 +250,9 @@
       <workItem from="1578907221869" duration="13484000" />
       <workItem from="1578927767107" duration="6538000" />
       <workItem from="1578987975274" duration="6595000" />
-      <workItem from="1578995803269" duration="12143000" />
-    </task>
-    <task id="LOCAL-00036" summary="feat: Different User view for admins (different serialization of all User entities)">
-      <created>1578066495127</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1578066495127</updated>
+      <workItem from="1578995803269" duration="15353000" />
+      <workItem from="1579075095383" duration="847000" />
+      <workItem from="1579076768808" duration="14833000" />
     </task>
     <task id="LOCAL-00037" summary="feat: Verifying only admin can see all User's email">
       <created>1578067457954</created>
@@ -594,7 +590,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579006775295</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="fixed: disabled eager loading (dev)">
+      <created>1579014812581</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1579014812581</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -615,7 +618,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: Configuring default collection sorting order" />
     <MESSAGE value="feat: Search filter" />
     <MESSAGE value="feat: Date filter" />
     <MESSAGE value="feat: Range filter" />
@@ -640,7 +642,8 @@
     <MESSAGE value="fixed: title blogpost group" />
     <MESSAGE value="fixed: fix display username related to post" />
     <MESSAGE value="fixed: add auth success listener" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed: add auth success listener" />
+    <MESSAGE value="fixed: disabled eager loading (dev)" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed: disabled eager loading (dev)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="184" key="#Intentions" timestamp="1578302279612">
@@ -683,14 +686,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="701" y="69" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578903726966" />
-    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1579006774644">
+    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1579014811971">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1579006774644" />
-    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1578912153571">
+    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1579014811971" />
+    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1579075340639">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578912153571" />
+    <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1579075340639" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1578038972366">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -707,14 +710,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="168" key="SettingsEditor/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578995793907" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1579006776630">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1579014813981">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1579006776630" />
-    <state x="655" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1578995803255">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1579014813981" />
+    <state x="655" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1579076779673">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="655" y="350" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578995803255" />
+    <state x="655" y="350" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1579076779673" />
     <state x="618" y="195" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1578297780072">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

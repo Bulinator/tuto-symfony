@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9a778473-a4aa-47b3-aec7-e5cb6cb93351" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/lexik_jwt_authentication.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/lexik_jwt_authentication.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,21 +251,7 @@
       <workItem from="1578987975274" duration="6595000" />
       <workItem from="1578995803269" duration="15353000" />
       <workItem from="1579075095383" duration="847000" />
-      <workItem from="1579076768808" duration="14833000" />
-    </task>
-    <task id="LOCAL-00037" summary="feat: Verifying only admin can see all User's email">
-      <created>1578067457954</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1578067457954</updated>
-    </task>
-    <task id="LOCAL-00038" summary="feat: User can view his full profile (including email and roles) - custom Normalizer">
-      <created>1578068824817</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1578068824817</updated>
+      <workItem from="1579076768808" duration="15346000" />
     </task>
     <task id="LOCAL-00039" summary="feat:  Disabling password hashing for PUT operation">
       <created>1578297891155</created>
@@ -597,7 +582,21 @@
       <option name="project" value="LOCAL" />
       <updated>1579014812581</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="fixed: dev test">
+      <created>1579096008577</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1579096008577</updated>
+    </task>
+    <task id="LOCAL-00087" summary="fixed: dev test">
+      <created>1579096114358</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1579096114358</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -618,7 +617,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: Search filter" />
     <MESSAGE value="feat: Date filter" />
     <MESSAGE value="feat: Range filter" />
     <MESSAGE value="feat: Sorting filter" />
@@ -643,7 +641,8 @@
     <MESSAGE value="fixed: fix display username related to post" />
     <MESSAGE value="fixed: add auth success listener" />
     <MESSAGE value="fixed: disabled eager loading (dev)" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed: disabled eager loading (dev)" />
+    <MESSAGE value="fixed: dev test" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed: dev test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="184" key="#Intentions" timestamp="1578302279612">
@@ -686,10 +685,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="701" y="69" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578903726966" />
-    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1579096007899">
+    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1579096113645">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1579096007899" />
+    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1579096113645" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1579075340639">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -710,10 +709,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="168" key="SettingsEditor/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578995793907" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1579096009923">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1579096115406">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1579096009923" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1579096115406" />
     <state x="655" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1579076779673">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

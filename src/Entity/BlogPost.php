@@ -58,7 +58,7 @@ use ApiPlatform\Core\Serializer\Filter\PropertyFilter;
  * )
  * @ApiResource(
  *     attributes={
- *         "order"={"published": "DESC"}, "maximum_items_per_page"=5
+ *         "order"={"published": "DESC"}, "maximum_items_per_page"=5, "pagination_partial"=false
  *     },
  *     itemOperations={
  *         "get"={

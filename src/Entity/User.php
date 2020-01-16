@@ -55,8 +55,8 @@ use App\Controller\ResetPasswordAction;
  *     }
  * )
  * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
- * @UniqueEntity("username")
- * @UniqueEntity("email")
+ * @UniqueEntity("username", groups={"post", "put"})
+ * @UniqueEntity("email", groups={"post", "put"})
  * @method bool needsRehash(UserInterface $user)
  */
 class User implements UserInterface

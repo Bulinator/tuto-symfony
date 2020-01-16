@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9a778473-a4aa-47b3-aec7-e5cb6cb93351" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Email/confirmation.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Email/confirmation.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +43,13 @@
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="test: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="test: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="user: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -251,14 +260,9 @@
       <workItem from="1578987975274" duration="6595000" />
       <workItem from="1578995803269" duration="15353000" />
       <workItem from="1579075095383" duration="847000" />
-      <workItem from="1579076768808" duration="16966000" />
-    </task>
-    <task id="LOCAL-00040" summary="feat: Configuring custom operation for password reset in User">
-      <created>1578298110897</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1578298110897</updated>
+      <workItem from="1579076768808" duration="19534000" />
+      <workItem from="1579111738935" duration="696000" />
+      <workItem from="1579164843548" duration="4522000" />
     </task>
     <task id="LOCAL-00041" summary="feat: Creating custom Action class">
       <created>1578307730313</created>
@@ -596,7 +600,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579096519363</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="fixed: embedded user on new comment">
+      <created>1579105436697</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1579105436697</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -617,7 +628,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: Date filter" />
     <MESSAGE value="feat: Range filter" />
     <MESSAGE value="feat: Sorting filter" />
     <MESSAGE value="feat: Filtering by nested properties" />
@@ -642,7 +652,8 @@
     <MESSAGE value="fixed: add auth success listener" />
     <MESSAGE value="fixed: disabled eager loading (dev)" />
     <MESSAGE value="fixed: dev test" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed: dev test" />
+    <MESSAGE value="fixed: embedded user on new comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed: embedded user on new comment" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="184" key="#Intentions" timestamp="1578302279612">
@@ -685,14 +696,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="701" y="69" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578903726966" />
-    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1579096518788">
+    <state x="585" y="122" key="CommitChangelistDialog2" timestamp="1579105436113">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1579096518788" />
-    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1579075340639">
+    <state x="585" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1579105436113" />
+    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1579164988162">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1579075340639" />
+    <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1579164988162" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1578038972366">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -709,14 +720,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="168" key="SettingsEditor/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1578995793907" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1579096520599">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1579105438230">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1579096520599" />
-    <state x="655" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1579076779673">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1579105438230" />
+    <state x="655" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1579164983158">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="655" y="350" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1579076779673" />
+    <state x="655" y="350" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1050" timestamp="1579164983158" />
     <state x="618" y="195" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1578297780072">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

@@ -5,4 +5,5 @@
 <p>
     Please confirm your email address by clicking
     <a href="{{ url("default_confirm_token", {'token': user.getConfirmationToken()}) }}">this link</a>
+    or type the code inside the form: <strong>{{ user.getConfirmationToken() }}</strong>
 </p>

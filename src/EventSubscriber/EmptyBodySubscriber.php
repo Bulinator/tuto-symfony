@@ -35,8 +35,8 @@ class EmptyBodySubscriber implements EventSubscriberInterface
 
         $data = $event->getRequest()->get('data');
 
-        if (null === $data) {
-            throw new EmptyBodyException();
-        }
+//        if (null === $data) {
+//            throw new EmptyBodyException();
+//        }
     }
 }
